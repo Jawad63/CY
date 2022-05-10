@@ -1,0 +1,146 @@
+h1 {
+   color: white;
+}
+
+h1, h2, p {
+   font-family: 'Montserrat';
+}
+
+/*
+.section-main {
+   background-color: white;
+   
+   img {
+      background-size: cover;
+      text-align: center;
+   }
+}
+*/
+
+.section-one {
+   background: url('../images/image-one.jpg');
+   background-size: cover;
+
+
+   h1 {
+      text-align: center;
+      font-size: 3rem;
+   }
+
+   a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      border: 2px solid white;
+      padding: 0.7rem;
+   }
+
+   a:hover {
+      color: goldenrod;
+      border: 2px solid goldenrod;
+      transition: 1s ease;
+
+   }
+} 
+
+.slide-main {
+   h2 {
+      color: white;
+      left: 1%;
+      margin-top: 5rem;
+      text-transform: capitalize;
+      text-align: center;
+      text-transform: capitalize;
+   }
+}
+
+.section-two {
+   background: url('../images/image-two.jpg');
+   background-size: cover;
+
+   h1 {
+      text-align: left;
+      margin-left: 2rem;
+      font-size: 3rem;
+   }
+
+   .section-two-text-block {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;   
+      grid-template-rows: 1fr;
+      
+      p {
+         color: white;
+         font-size: 18px;
+         margin: 2rem;
+         padding: 2rem;
+         background: rgba(0, 0, 0, 0.4);
+      }
+   }
+
+   .slide-one {
+      background: url('../images/image-one.jpg');
+      background-size: cover;
+   }
+
+   .slide-two {
+      background: url('../images/image-three.jpg');
+      background-size: cover;
+   }
+
+   .slide-three {
+      background: url('../images/image-four.jpg');
+      background-size: cover;
+   }
+
+   .slide-four {
+      background: url('../images/image-five.jpg');
+      background-size: cover;
+   }
+
+}
+
+.section-three {
+   background: url('../images/image-five.jpg');
+   background-size: cover;
+   
+   h1 {
+      text-align: left;
+      margin-left: 4rem;
+      font-size: 3rem;
+   }
+   
+}
+
+.section-four {
+   background: url('../images/image-one.jpg');
+   background-size: cover;
+   
+   h1 {
+      text-align: left;
+      margin-left: 4rem;
+      font-size: 3rem;
+   }
+   
+}
+
+.section-five {
+   background: url('../images/image-two.jpg');
+   background-size: cover;
+   
+   h1 {
+      text-align: left;
+      margin-left: 4rem;
+      font-size: 3rem;
+   }
+   
+}
+
+span {
+   background: white !important ;
+}
+
+.fp-slidesNav.fp-bottom {
+   text-align: center;
+}
