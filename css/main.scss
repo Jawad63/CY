@@ -111,6 +111,16 @@ h1 {
 
    }
 
+
+} 
+
+
+/* SECTION TWO */
+
+.section-two {
+   background-image: url('../images/image-four.jpg');
+   background-size: cover;
+
    section {
 
       display: flex;
@@ -121,7 +131,7 @@ h1 {
          z-index: 10;
          max-width: 600px;
          position: relative;
-         left: 5%;
+         left: 3%;
 
          h1 {
             font-size: 80px;
@@ -130,9 +140,10 @@ h1 {
             color: rgb(127, 30, 73);
 
          }
+
          p {
             color: white;
-            margin: 20px 0 10px 0;
+            margin: 20px 0 10px 30px;
             font-size: 14px;
          }
 
@@ -141,6 +152,7 @@ h1 {
             color: white;
             padding: 7px;
             border-bottom: 2px solid white;
+            margin-left: 30px ;
          }
 
          .btn:hover {
@@ -150,20 +162,6 @@ h1 {
          }
       }
    }
-
-
-
-} 
-
-
-/* SECTION TWO */
-
-
-
-
-.section-two {
-   background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(300deg, rgba(198, 198, 198,0.05) 0%, rgba(198, 198, 198,0.05) 50%,rgba(11, 11, 11,0.05) 50%, rgba(11, 11, 11,0.05) 100%),linear-gradient(64deg, rgba(54, 54, 54,0.05) 0%, rgba(54, 54, 54,0.05) 50%,rgba(132, 132, 132,0.05) 50%, rgba(132, 132, 132,0.05) 100%),linear-gradient(17deg, rgba(57, 57, 57,0.05) 0%, rgba(57, 57, 57,0.05) 50%,rgba(128, 128, 128,0.05) 50%, rgba(128, 128, 128,0.05) 100%),linear-gradient(332deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(85, 85, 85,0.05) 50%, rgba(85, 85, 85,0.05) 100%),linear-gradient(148deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(211, 211, 211,0.05) 50%, rgba(211, 211, 211,0.05) 100%),linear-gradient(142deg, rgba(168, 168, 168,0.05) 0%, rgba(168, 168, 168,0.05) 50%,rgba(32, 32, 32,0.05) 50%, rgba(32, 32, 32,0.05) 100%),linear-gradient(15deg, rgba(225, 225, 225,0.05) 0%, rgba(225, 225, 225,0.05) 50%,rgba(228, 228, 228,0.05) 50%, rgba(228, 228, 228,0.05) 100%),linear-gradient(5deg, rgba(104, 104, 104,0.05) 0%, rgba(104, 104, 104,0.05) 50%,rgba(43, 43, 43,0.05) 50%, rgba(43, 43, 43,0.05) 100%),radial-gradient(circle at center center, hsl(290,5%,8%),hsl(290,5%,8%));
-   background-size: cover;
 
    .slide-main {
       h2 {
@@ -219,6 +217,10 @@ h1 {
    }
 
 }
+
+
+
+
 
 
 /* SECTION THREE */
@@ -301,14 +303,115 @@ h1 {
 /* SECTION FOUR */
 
 .section-four {
-   background: url('../images/image-one.jpg');
-   background-size: cover;
+   background-color: black;
+   width: 90%;
+   margin: 3rem auto;
+
+   .contact-box {
+      background-color: red;
+      display: flex;
+
+      .contact-left {
+         flex-basis: 60%;
+         padding: 40px;
+         background-color: white;
+
+         h3 {
+            text-transform: capitalize;
+            margin-bottom: 30px;
+         }
+
+         .input-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .input-group {
+               flex-basis: 45%;
+
+               input {
+                  width: 100%;
+                  border: none;
+                  border-bottom: 1px solid #ccc;
+                  outline: none;
+                  padding-bottom: 5px;
+               }
+            }
+         }
+
+         label {
+            margin-bottom: 6px;
+            display: block;
+            color: var(--primary-color);
+         }
+
+         textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+         }
+
+         button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            width: 100px;
+            height: 35px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+            cursor: pointer;
+
+         }
+
+
+      }
+
+      .contact-right {
+         flex-basis: 40%;
+         padding: 40px;
+         background-color: var(--primary-color);
+
+         tr td {
+            padding-top: 20px;
+         }
+
+         tr td:first-child {
+            padding-right: 20px;
+         }
+
+         .content-footer tr td {
+            display: block;
+            justify-content: space-evenly;
+            font-size: 14px;
+         }
+
+         a {
+            text-decoration: none;
+            color: white;
+         }
+
+         a:hover {
+            border-bottom: 2px solid white;
+         }
+      }
+   }
    
    h1 {
       text-align: left;
-      margin-left: 4rem;
+      margin: 1rem 2rem;
       font-size: 3rem;
+      text-transform: capitalize;
+      color: rgb(127, 30, 73);
    }
+
+   p {
+      color: white;
+      font-size: 14px;
+      margin: 1rem 2rem;
+   }
+
    
 }
 
@@ -324,7 +427,9 @@ span {
 }
 
 .fp-tooltip.fp-right {
-   color: salmon !important;
+   color: rgb(127, 30, 90) !important;
+   font-size: 15px !important;
+   font-weight: 600;
 }
 
 
