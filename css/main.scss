@@ -21,10 +21,19 @@ h1 {
 
 
 /* SECTION ONE */
+
+
+
+
 .section-one {
 
-   background-image: url('../images/image-one.jpg');
+   background-image: url('../images/header/image00001.jpeg');
+   background-position: center;
+   background-repeat: no-repeat;
    background-size: cover;
+   height: 100%;
+   
+
 
 
    header {
@@ -72,10 +81,20 @@ h1 {
          display: flex;
          justify-content: center;
          align-items: center;
-         background-image: url('../images/image-four.jpg');
+         background-image: url('../images/image-three.jpg');
          background-repeat: no-repeat;
          background-size: cover;
          transition: 1s ease;
+
+
+         img {
+            height: 300px;
+            width: auto;
+            position: fixed;
+            right: 5%;
+            top: 25%;
+            display: none;
+         }
 
          ul {
             position: relative;
@@ -100,6 +119,8 @@ h1 {
                }
             }
          }
+
+
 
 
 
@@ -232,20 +253,24 @@ h1 {
    align-items: center;
    justify-content: center;
    background-color: black;
+   
+
 
 
    .about-section {
       background: url('../images/image-three.jpg') no-repeat left;
       background-size: 55%;
-      background-color: black;
+      background-color: whitesmoke;
       overflow: hidden;
       padding: 100px 100px;
+      background-color: black;
 
       .inner-container {
-         width: 55%;
+         width: 60%;
          float: right;
          background-color: salmon;
          padding: 50px 50px;
+         box-shadow: rgb(38, 57, 77) 10px 15px 10px -10px;
 
          h1 {
             font-size: 30px;
@@ -279,11 +304,16 @@ h1 {
                      text-decoration: none;
                      color: black;
                      transition: .1s ease-in-out;
+                     font-size: 14px;
+                     font-weight: 500;
+                     border: 2px solid black;
+                     padding: 5px;
                   }
 
                   a:hover {
-                     border-bottom: 2px solid black;
-
+                     background-color: white;
+                     color: black;
+                     border: 2px solid white;
                   }
                }
             }
@@ -420,6 +450,7 @@ h1 {
 
 span {
    background: salmon !important;
+   margin: 10px;
 }
 
 .fp-slidesNav.fp-bottom {
@@ -427,9 +458,13 @@ span {
 }
 
 .fp-tooltip.fp-right {
-   color: rgb(127, 30, 90) !important;
+   color: white !important;
    font-size: 15px !important;
    font-weight: 600;
+   background-color: salmon !important;
+   padding: 3px;
+   margin-bottom: 2px;
+   
 }
 
 
