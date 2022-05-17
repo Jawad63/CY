@@ -18,8 +18,9 @@ h1 {
   color: white;
 }
 
+/* SECTION ONE */
 .section-one {
-  background-image: radial-gradient(circle at center center, transparent, black), linear-gradient(300deg, rgba(198, 198, 198, 0.05) 0%, rgba(198, 198, 198, 0.05) 50%, rgba(11, 11, 11, 0.05) 50%, rgba(11, 11, 11, 0.05) 100%), linear-gradient(64deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 50%, rgba(132, 132, 132, 0.05) 50%, rgba(132, 132, 132, 0.05) 100%), linear-gradient(17deg, rgba(57, 57, 57, 0.05) 0%, rgba(57, 57, 57, 0.05) 50%, rgba(128, 128, 128, 0.05) 50%, rgba(128, 128, 128, 0.05) 100%), linear-gradient(332deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(85, 85, 85, 0.05) 50%, rgba(85, 85, 85, 0.05) 100%), linear-gradient(148deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(211, 211, 211, 0.05) 50%, rgba(211, 211, 211, 0.05) 100%), linear-gradient(142deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 50%, rgba(32, 32, 32, 0.05) 50%, rgba(32, 32, 32, 0.05) 100%), linear-gradient(15deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 50%, rgba(228, 228, 228, 0.05) 50%, rgba(228, 228, 228, 0.05) 100%), linear-gradient(5deg, rgba(104, 104, 104, 0.05) 0%, rgba(104, 104, 104, 0.05) 50%, rgba(43, 43, 43, 0.05) 50%, rgba(43, 43, 43, 0.05) 100%), radial-gradient(circle at center center, #151315, #151315);
+  background-image: url("../images/image-one.jpg");
   background-size: cover;
 }
 
@@ -29,7 +30,7 @@ h1 {
   left: 100px;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: white;
   z-index: 20;
 }
 
@@ -72,7 +73,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-image: url("../images/image-four.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -150,18 +153,19 @@ h1 {
   transition: 0.5s ease-in;
 }
 
-.slide-main h2 {
+/* SECTION TWO */
+.section-two {
+  background-image: radial-gradient(circle at center center, transparent, black), linear-gradient(300deg, rgba(198, 198, 198, 0.05) 0%, rgba(198, 198, 198, 0.05) 50%, rgba(11, 11, 11, 0.05) 50%, rgba(11, 11, 11, 0.05) 100%), linear-gradient(64deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 50%, rgba(132, 132, 132, 0.05) 50%, rgba(132, 132, 132, 0.05) 100%), linear-gradient(17deg, rgba(57, 57, 57, 0.05) 0%, rgba(57, 57, 57, 0.05) 50%, rgba(128, 128, 128, 0.05) 50%, rgba(128, 128, 128, 0.05) 100%), linear-gradient(332deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(85, 85, 85, 0.05) 50%, rgba(85, 85, 85, 0.05) 100%), linear-gradient(148deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(211, 211, 211, 0.05) 50%, rgba(211, 211, 211, 0.05) 100%), linear-gradient(142deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 50%, rgba(32, 32, 32, 0.05) 50%, rgba(32, 32, 32, 0.05) 100%), linear-gradient(15deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 50%, rgba(228, 228, 228, 0.05) 50%, rgba(228, 228, 228, 0.05) 100%), linear-gradient(5deg, rgba(104, 104, 104, 0.05) 0%, rgba(104, 104, 104, 0.05) 50%, rgba(43, 43, 43, 0.05) 50%, rgba(43, 43, 43, 0.05) 100%), radial-gradient(circle at center center, #151315, #151315);
+  background-size: cover;
+}
+
+.section-two .slide-main h2 {
   color: white;
   left: 1%;
   margin-top: 5rem;
   text-transform: capitalize;
   text-align: center;
   text-transform: capitalize;
-}
-
-.section-two {
-  background-image: radial-gradient(circle at center center, transparent, black), linear-gradient(300deg, rgba(198, 198, 198, 0.05) 0%, rgba(198, 198, 198, 0.05) 50%, rgba(11, 11, 11, 0.05) 50%, rgba(11, 11, 11, 0.05) 100%), linear-gradient(64deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 50%, rgba(132, 132, 132, 0.05) 50%, rgba(132, 132, 132, 0.05) 100%), linear-gradient(17deg, rgba(57, 57, 57, 0.05) 0%, rgba(57, 57, 57, 0.05) 50%, rgba(128, 128, 128, 0.05) 50%, rgba(128, 128, 128, 0.05) 100%), linear-gradient(332deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(85, 85, 85, 0.05) 50%, rgba(85, 85, 85, 0.05) 100%), linear-gradient(148deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(211, 211, 211, 0.05) 50%, rgba(211, 211, 211, 0.05) 100%), linear-gradient(142deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 50%, rgba(32, 32, 32, 0.05) 50%, rgba(32, 32, 32, 0.05) 100%), linear-gradient(15deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 50%, rgba(228, 228, 228, 0.05) 50%, rgba(228, 228, 228, 0.05) 100%), linear-gradient(5deg, rgba(104, 104, 104, 0.05) 0%, rgba(104, 104, 104, 0.05) 50%, rgba(43, 43, 43, 0.05) 50%, rgba(43, 43, 43, 0.05) 100%), radial-gradient(circle at center center, #151315, #151315);
-  background-size: cover;
 }
 
 .section-two h1 {
@@ -210,17 +214,95 @@ h1 {
   background-size: cover;
 }
 
+/* SECTION THREE */
 .section-three {
-  background: url("../images/image-five.jpg");
-  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+.section-three .about-section {
+  background: url("../images/image-three.jpg") no-repeat left;
+  background-size: 55%;
+  background-color: black;
+  overflow: hidden;
+  padding: 100px 100px;
+}
+
+.section-three .about-section .inner-container {
+  width: 55%;
+  float: right;
+  background-color: salmon;
+  padding: 50px 50px;
+}
+
+.section-three .about-section .inner-container h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #7f1e49;
+}
+
+.section-three .about-section .inner-container .text {
+  font-size: 14px;
+  color: white;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section-three .about-section .inner-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-three .about-section .inner-container .skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-three .about-section .inner-container .skills ul li {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding: 8px;
+}
+
+.section-three .about-section .inner-container .skills ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.section-three .about-section .inner-container .skills ul li a:hover {
+  border-bottom: 2px solid black;
 }
 
 .section-three h1 {
-  text-align: left;
-  margin-left: 4rem;
-  font-size: 3rem;
+  color: black;
 }
 
+/* SECTION FOUR */
 .section-four {
   background: url("../images/image-one.jpg");
   background-size: cover;
@@ -232,6 +314,7 @@ h1 {
   font-size: 3rem;
 }
 
+/* FULLAGE.JS STYLINGS */
 span {
   background: salmon !important;
 }
@@ -240,6 +323,11 @@ span {
   text-align: center;
 }
 
+.fp-tooltip.fp-right {
+  color: salmon !important;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 1068px) {
   .section-one header .logo {
     left: 80px;
@@ -254,6 +342,22 @@ span {
   }
   .section {
     padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .about-section .inner-container {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

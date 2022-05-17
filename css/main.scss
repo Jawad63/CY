@@ -20,10 +20,10 @@ h1 {
 }
 
 
-
+/* SECTION ONE */
 .section-one {
 
-   background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(300deg, rgba(198, 198, 198,0.05) 0%, rgba(198, 198, 198,0.05) 50%,rgba(11, 11, 11,0.05) 50%, rgba(11, 11, 11,0.05) 100%),linear-gradient(64deg, rgba(54, 54, 54,0.05) 0%, rgba(54, 54, 54,0.05) 50%,rgba(132, 132, 132,0.05) 50%, rgba(132, 132, 132,0.05) 100%),linear-gradient(17deg, rgba(57, 57, 57,0.05) 0%, rgba(57, 57, 57,0.05) 50%,rgba(128, 128, 128,0.05) 50%, rgba(128, 128, 128,0.05) 100%),linear-gradient(332deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(85, 85, 85,0.05) 50%, rgba(85, 85, 85,0.05) 100%),linear-gradient(148deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(211, 211, 211,0.05) 50%, rgba(211, 211, 211,0.05) 100%),linear-gradient(142deg, rgba(168, 168, 168,0.05) 0%, rgba(168, 168, 168,0.05) 50%,rgba(32, 32, 32,0.05) 50%, rgba(32, 32, 32,0.05) 100%),linear-gradient(15deg, rgba(225, 225, 225,0.05) 0%, rgba(225, 225, 225,0.05) 50%,rgba(228, 228, 228,0.05) 50%, rgba(228, 228, 228,0.05) 100%),linear-gradient(5deg, rgba(104, 104, 104,0.05) 0%, rgba(104, 104, 104,0.05) 50%,rgba(43, 43, 43,0.05) 50%, rgba(43, 43, 43,0.05) 100%),radial-gradient(circle at center center, hsl(290,5%,8%),hsl(290,5%,8%));
+   background-image: url('../images/image-one.jpg');
    background-size: cover;
 
 
@@ -35,7 +35,7 @@ h1 {
          left: 100px;
          font-size: 2rem;
          font-weight: 600;
-         color: var(--primary-color);
+         color: white;
          z-index: 20;
       }
 
@@ -72,7 +72,9 @@ h1 {
          display: flex;
          justify-content: center;
          align-items: center;
-         background-color: black;
+         background-image: url('../images/image-four.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
          transition: 1s ease;
 
          ul {
@@ -154,23 +156,25 @@ h1 {
 } 
 
 
+/* SECTION TWO */
 
 
 
-.slide-main {
-   h2 {
-      color: white;
-      left: 1%;
-      margin-top: 5rem;
-      text-transform: capitalize;
-      text-align: center;
-      text-transform: capitalize;
-   }
-}
 
 .section-two {
    background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(300deg, rgba(198, 198, 198,0.05) 0%, rgba(198, 198, 198,0.05) 50%,rgba(11, 11, 11,0.05) 50%, rgba(11, 11, 11,0.05) 100%),linear-gradient(64deg, rgba(54, 54, 54,0.05) 0%, rgba(54, 54, 54,0.05) 50%,rgba(132, 132, 132,0.05) 50%, rgba(132, 132, 132,0.05) 100%),linear-gradient(17deg, rgba(57, 57, 57,0.05) 0%, rgba(57, 57, 57,0.05) 50%,rgba(128, 128, 128,0.05) 50%, rgba(128, 128, 128,0.05) 100%),linear-gradient(332deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(85, 85, 85,0.05) 50%, rgba(85, 85, 85,0.05) 100%),linear-gradient(148deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(211, 211, 211,0.05) 50%, rgba(211, 211, 211,0.05) 100%),linear-gradient(142deg, rgba(168, 168, 168,0.05) 0%, rgba(168, 168, 168,0.05) 50%,rgba(32, 32, 32,0.05) 50%, rgba(32, 32, 32,0.05) 100%),linear-gradient(15deg, rgba(225, 225, 225,0.05) 0%, rgba(225, 225, 225,0.05) 50%,rgba(228, 228, 228,0.05) 50%, rgba(228, 228, 228,0.05) 100%),linear-gradient(5deg, rgba(104, 104, 104,0.05) 0%, rgba(104, 104, 104,0.05) 50%,rgba(43, 43, 43,0.05) 50%, rgba(43, 43, 43,0.05) 100%),radial-gradient(circle at center center, hsl(290,5%,8%),hsl(290,5%,8%));
    background-size: cover;
+
+   .slide-main {
+      h2 {
+         color: white;
+         left: 1%;
+         margin-top: 5rem;
+         text-transform: capitalize;
+         text-align: center;
+         text-transform: capitalize;
+      }
+   }
 
 
    h1 {
@@ -216,17 +220,85 @@ h1 {
 
 }
 
+
+/* SECTION THREE */
+
 .section-three {
-   background: url('../images/image-five.jpg');
-   background-size: cover;
-   
+
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+
+
+   .about-section {
+      background: url('../images/image-three.jpg') no-repeat left;
+      background-size: 55%;
+      background-color: black;
+      overflow: hidden;
+      padding: 100px 100px;
+
+      .inner-container {
+         width: 55%;
+         float: right;
+         background-color: salmon;
+         padding: 50px 50px;
+
+         h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: rgb(127, 30, 73);
+         }
+
+         .text {
+            font-size: 14px;
+            color: white;
+            line-height: 30px;
+            text-align: left;
+            margin-bottom: 40px;
+         }
+
+         .skills {
+            display: flex;
+            justify-content: space-evenly;
+
+            ul {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               li {
+                  justify-content: space-evenly;
+                  list-style: none;
+                  padding: 8px;
+
+                  a {
+                     text-decoration: none;
+                     color: black;
+                     transition: .1s ease-in-out;
+                  }
+
+                  a:hover {
+                     border-bottom: 2px solid black;
+
+                  }
+               }
+            }
+         }
+
+
+      }
+   }
+
    h1 {
-      text-align: left;
-      margin-left: 4rem;
-      font-size: 3rem;
+      color: black;
    }
    
 }
+
+
+/* SECTION FOUR */
 
 .section-four {
    background: url('../images/image-one.jpg');
@@ -241,14 +313,22 @@ h1 {
 }
 
 
+/* FULLAGE.JS STYLINGS */
 
 span {
-   background: salmon !important ;
+   background: salmon !important;
 }
 
 .fp-slidesNav.fp-bottom {
    text-align: center;
 }
+
+.fp-tooltip.fp-right {
+   color: salmon !important;
+}
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1068px) {
 
@@ -270,4 +350,22 @@ span {
       padding: 100px 40px;
    }
    
+}
+
+
+@media screen and (max-width: 1200px) {
+   .inner-container {
+      padding: 80px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .about-section {
+      background-size: 100%;
+      padding: 100px 40px;
+
+      .inner-container  {
+         width: 100%;
+      }
+   }
 }
