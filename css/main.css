@@ -14,13 +14,18 @@ html, body {
   font-family: 'poppins', sans-serif;
 }
 
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 h1 {
   color: white;
 }
 
 /* SECTION ONE */
 .section-one {
-  background-image: url("../images/header/image00001.jpeg");
+  background-image: url("../images/image-one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,58 +228,67 @@ h1 {
 }
 
 .section-two .slide-four {
-  background: url("../images/image-five.jpg");
+  background: url("../images/image-one.jpg");
   background-size: cover;
 }
 
 /* SECTION THREE */
 .section-three {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: black;
+  height: 100vh;
 }
 
-.section-three .about-section {
-  background: url("../images/image-three.jpg") no-repeat left;
-  background-size: 55%;
-  background-color: whitesmoke;
-  overflow: hidden;
-  padding: 100px 100px;
-  background-color: black;
+.section-three .parent-object {
+  max-width: 1300px;
+  width: auto;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  top: 18%;
 }
 
-.section-three .about-section .inner-container {
-  width: 60%;
-  float: right;
+.section-three .parent-object img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  width: auto;
+  height: 500px;
+  position: absolute;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.section-three .parent-object .about-child {
+  position: absolute;
+  max-width: 700px;
+  width: auto;
+  height: 350px;
   background-color: salmon;
-  padding: 50px 50px;
-  -webkit-box-shadow: #26394d 10px 15px 10px -10px;
-          box-shadow: #26394d 10px 15px 10px -10px;
+  top: 18%;
+  left: 45%;
+  color: black;
 }
 
-.section-three .about-section .inner-container h1 {
+.section-three .parent-object .about-child .about-content {
+  margin: 2rem;
+}
+
+.section-three .parent-object .about-child .about-content h1 {
   font-size: 30px;
   margin-bottom: 30px;
   color: #7f1e49;
 }
 
-.section-three .about-section .inner-container .text {
+.section-three .parent-object .about-child .about-content .text {
   font-size: 14px;
+  font-weight: 400;
   color: white;
   line-height: 30px;
   text-align: left;
   margin-bottom: 40px;
 }
 
-.section-three .about-section .inner-container .skills {
+.section-three .parent-object .about-child .about-content .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +297,7 @@ h1 {
           justify-content: space-evenly;
 }
 
-.section-three .about-section .inner-container .skills ul {
+.section-three .parent-object .about-child .about-content .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +309,7 @@ h1 {
           justify-content: center;
 }
 
-.section-three .about-section .inner-container .skills ul li {
+.section-three .parent-object .about-child .about-content .skills ul li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -303,7 +317,7 @@ h1 {
   padding: 8px;
 }
 
-.section-three .about-section .inner-container .skills ul li a {
+.section-three .parent-object .about-child .about-content .skills ul li a {
   text-decoration: none;
   color: black;
   -webkit-transition: .1s ease-in-out;
@@ -314,14 +328,80 @@ h1 {
   padding: 5px;
 }
 
-.section-three .about-section .inner-container .skills ul li a:hover {
+.section-three .parent-object .about-child .about-content .skills ul li a:hover {
   background-color: white;
   color: black;
   border: 2px solid white;
 }
 
-.section-three h1 {
-  color: black;
+/* SECTION THREE MEDIA QUERIES */
+/* mobile version */
+@media only screen and (max-width: 600px) {
+  .parent-object {
+    max-width: 1300px;
+    width: auto;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: auto;
+    width: auto;
+    height: 500px;
+    position: static;
+    margin: 10px;
+  }
+  .about-child {
+    position: static;
+    max-width: auto;
+    width: auto;
+    height: 300px;
+    background-color: salmon;
+    color: black;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .parent-object {
+    max-width: 1400px;
+    width: auto;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: auto;
+    width: auto;
+    height: 500px;
+    position: static;
+    margin: 10px;
+  }
+  .about-child {
+    position: static;
+    max-width: auto;
+    width: auto;
+    height: 300px;
+    background-color: salmon;
+    color: black;
+    margin: 10px;
+  }
 }
 
 /* SECTION FOUR */

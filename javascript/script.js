@@ -1,3 +1,5 @@
+// Fullpage.js sections and slides configuration
+
 new fullpage('#fullpage', {
    autoScrolling: true,
    navigation: true,
@@ -16,6 +18,8 @@ new fullpage('#fullpage', {
 });
 
 
+// Toggle menu
+
 const toggle = document.querySelector('.toggle');
 const navigation = document.querySelector('.navigation');
 
@@ -25,6 +29,9 @@ toggle.addEventListener('click', () => {
 })
 
 
+
+
+// Header Hover effect 
 
 const imageOne = document.getElementById('image-1'); 
 const imageTwo = document.getElementById('image-2');
@@ -57,3 +64,37 @@ function mouseHoverThree() {
 }
 
 
+// About Us effect: 
+
+const aboutUsOne = document.getElementById('button-one');
+const aboutUsTwo = document.getElementById('button-two');
+const aboutUsThree = document.getElementById('button-three');
+const aboutUsFour = document.getElementById('button-four');
+const aboutUsImage = document.getElementById('image');
+
+const aboutUsText = document.getElementById('text');
+
+aboutUsOne.addEventListener('click', () => {
+   aboutUsText.innerText = 'This text is about Consultancy.';
+   aboutUsImage.src = './images/about-us/pexels-anamul-rezwan-1216589.jpg';
+
+});
+
+aboutUsTwo.addEventListener('click', () => {
+   aboutUsText.innerText = 'This text is about Digital-Marketing.';
+   aboutUsImage.src = './images/image-two.jpg';
+   aboutUsImage.style.transition = '1s';
+});
+
+aboutUsThree.addEventListener('click', () => {
+   aboutUsText.innerText = 'This text is about Construction-Advice.';
+   aboutUsImage.src = './images/image-three.jpg';
+   aboutUsImage.style.transition = '1s';
+
+});
+
+aboutUsFour.addEventListener('click', () => {
+   aboutUsText.innerText = 'This text is about Web-Development.';
+   aboutUsImage.src = './images/image-four.jpg';
+   aboutUsImage.style.transition = '1s';
+});
