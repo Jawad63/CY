@@ -71,30 +71,24 @@ const aboutUsTwo = document.getElementById('button-two');
 const aboutUsThree = document.getElementById('button-three');
 const aboutUsFour = document.getElementById('button-four');
 const aboutUsImage = document.getElementById('image');
-
 const aboutUsText = document.getElementById('text');
 
 aboutUsOne.addEventListener('click', () => {
    aboutUsText.innerText = 'This text is about Consultancy.';
    aboutUsImage.src = './images/about-us/pexels-anamul-rezwan-1216589.jpg';
-
 });
 
 aboutUsTwo.addEventListener('click', () => {
    aboutUsText.innerText = 'This text is about Digital-Marketing.';
    aboutUsImage.src = './images/image-two.jpg';
-   aboutUsImage.style.transition = '1s';
 });
 
 aboutUsThree.addEventListener('click', () => {
    aboutUsText.innerText = 'This text is about Construction-Advice.';
    aboutUsImage.src = './images/image-three.jpg';
-   aboutUsImage.style.transition = '1s';
-
 });
 
 aboutUsFour.addEventListener('click', () => {
    aboutUsText.innerText = 'This text is about Web-Development.';
    aboutUsImage.src = './images/image-four.jpg';
-   aboutUsImage.style.transition = '1s';
 });
