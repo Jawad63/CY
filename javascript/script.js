@@ -75,7 +75,7 @@ const aboutUsText = document.getElementById('text');
 
 aboutUsOne.addEventListener('click', () => {
    aboutUsText.innerText = 'This text is about Consultancy.';
-   aboutUsImage.src = './images/about-us/pexels-anamul-rezwan-1216589.jpg';
+   aboutUsImage.src = './images/image-one.jpg';
 });
 
 aboutUsTwo.addEventListener('click', () => {
