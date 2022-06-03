@@ -148,6 +148,54 @@ h1 {
   background-size: cover;
 }
 
+.section-two .slide-main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-two .slide-main .row .box {
+  width: 100%;
+  padding: 1rem;
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: black 0px 20px 30px -10px;
+          box-shadow: black 0px 20px 30px -10px;
+}
+
+.section-two .slide-main .row .box a {
+  text-decoration: none;
+}
+
+.section-two .slide-main .row .box h2 {
+  text-align: center;
+  color: salmon;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.section-two .slide-main .row .box p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.section-two .slide-main .row .box .discription {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.section-two .slide-main .row .box .icon {
+  text-align: center;
+}
+
 .section-two .row {
   display: -ms-grid;
   display: grid;

@@ -140,6 +140,47 @@ h1 {
    .slide-main {
       background-image: url("../images/image-four.jpg");
       background-size: cover;
+
+      .row {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+
+         .box {
+            width: 100%;
+            padding: 1rem;
+            max-width: 350px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+
+            a {
+               text-decoration: none;
+            }
+
+            h2 {
+               text-align: center;
+               color: salmon;
+               cursor: pointer;
+               padding-top: 1rem;
+            }
+
+            p {
+               text-align: center;
+               color: white;
+               font-size: 15px;
+               font-weight: 700;
+            }
+
+            .discription {
+               font-size: 13px;
+               font-weight: 300;
+            }
+
+            .icon {
+               text-align: center;
+            }
+         }
+      }
    }
 
    .row {
