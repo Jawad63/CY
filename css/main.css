@@ -147,16 +147,6 @@ h1 {
   background-size: cover;
 }
 
-.section-two .slide-main h1 {
-  font-size: 150px;
-  color: salmon;
-  position: absolute;
-  opacity: 0.3;
-  bottom: 40%;
-  padding-left: 10rem;
-  text-shadow: 2px 2px 2px black;
-}
-
 .section-two .row {
   display: -ms-grid;
   display: grid;
@@ -194,6 +184,11 @@ h1 {
   color: white;
   font-size: 15px;
   font-weight: 700;
+}
+
+.section-two .row .box .discription {
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .section-two .row .box .icon {
