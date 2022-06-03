@@ -144,28 +144,25 @@ h1 {
 
    .row {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
 
       .box {
-         padding: 3rem 1rem 3rem 1rem;
-         margin: 1rem;
+         width: 100%;
+         padding: 1rem;
+         max-width: 350px;
          background-color: rgba(0, 0, 0, 0.7);
          box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 
          a {
             text-decoration: none;
-
-            img {
-               position: relative;
-            }
          }
 
          h2 {
             text-align: center;
             color: salmon;
             cursor: pointer;
-            position: relative;
+            padding-top: 1rem;
          }
 
          p {
@@ -729,13 +726,11 @@ span {
       }
 
       .row {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: repeat(4, 1fr);
+         display: flex;
+         flex-direction: column;
 
          .box {
-            padding: 0;
-            margin: 0;
+            margin: 1rem;
             background-color: rgba(0, 0, 0, 0.7);
             box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 
@@ -747,7 +742,6 @@ span {
                text-decoration: none;
 
                img {
-                  position: relative;
                   max-width: 30px;
                   max-height: 30px;
                }
@@ -757,7 +751,6 @@ span {
                text-align: center;
                color: salmon;
                cursor: pointer;
-               position: relative;
             }
 
             p {
@@ -765,7 +758,6 @@ span {
                color: white;
                font-size: 15px;
                font-weight: 700;
-               display: none;
             }
 
             .discription {
