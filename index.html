@@ -9,34 +9,44 @@
    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="fp-responsive">
+
+
+   
+
+
+
+
+
+
    
    <div id="fullpage">
 
       <!-- SECTION-ONE -->
 
-      <div class="section section-one">
-         <header class="navbar">
-            <div class="logo">CY-Agency</div>
-            <div class="toggle"></div>
-            <div class="navigation">
-               <ul>
-                  <li><a href="#section-one" onmouseover="mouseHoverNone()">home</a></li><br>
-                  <li><a href="#section-two" onmouseover="mouseHoverOne()">work</a></li><br>
-                  <li><a href="#section-three" onmouseover="mouseHoverTwo()">about us</a></li><br>
-                  <li><a href="#section-four" onmouseover="mouseHoverThree()">contact</a></li><br>
-               </ul>
 
-               <div class="nav-images">
-                  <img src="./images/image-one.jpg" alt="" id="image-1">
-                  <img src="./images/image-two.jpg" alt="" id="image-2">
-                  <img src="./images/image-three.jpg" alt="" id="image-3">
+
+
+         <div class="section section-one">
+            <header class="navbar">
+               <div class="logo">CY-Agency</div>
+               <div class="toggle"></div>
+               <div class="navigation">
+                  <ul>
+                     <li><a href="#section-one">home</a></li><br>
+                     <li><a href="#section-two">work</a></li><br>
+                     <li><a href="#section-three">about us</a></li><br>
+                     <li><a href="#section-four">contact</a></li><br>
+                  </ul>
+         
+                  <div class="nav-images">
+                     <img src="./images/image-one.jpg" alt="" id="image-1">
+                     <img src="./images/image-two.jpg" alt="" id="image-2">
+                     <img src="./images/image-three.jpg" alt="" id="image-3">
+                  </div>
                </div>
+            </header>
 
-
-            </div>
-         </header>
-
-      </div>
+         </div>
 
 
 
@@ -128,7 +138,6 @@
                </div>
 
                <div class="box-2">
-
                   <h1>Consultancy</h1>
                   <br>
                   <p>
@@ -368,12 +377,12 @@
                   <div class="input-row">
                      <div class="input-group">
                         <label>Name</label>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" required>
                      </div>
 
                      <div class="input-group">
                         <label>Phone</label>
-                        <input type="text" placeholder="Number">
+                        <input type="text" placeholder="Number" required>
                      </div>
                   </div>
 
@@ -381,17 +390,17 @@
                   <div class="input-row">
                      <div class="input-group">
                         <label>Email</label>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" required>
                      </div>
 
                      <div class="input-group">
                         <label>Subject</label>
-                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Subject" required>
                      </div>
                   </div>
 
                   <label>Message</label>
-                  <textarea rows="5" placeholder="Your Message"></textarea>
+                  <textarea rows="5" placeholder="Your Message" required></textarea>
 
                   <button type="submit">SEND</button>
 

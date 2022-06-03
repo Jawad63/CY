@@ -32,6 +32,10 @@ h1 {
   height: 100%;
 }
 
+.section-one header {
+  z-index: 1000;
+}
+
 .section-one header .logo {
   position: absolute;
   top: 30px;
@@ -70,8 +74,10 @@ h1 {
   top: 0;
   left: 100%;
   width: 100%;
+  max-width: 500px;
   height: 100%;
   z-index: 15;
+  background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,9 +87,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../images/image-three.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -123,15 +126,10 @@ h1 {
 }
 
 .section-one header .navigation.active {
-  left: 0;
+  left: 70%;
 }
 
 /* SECTION TWO */
-.section-two {
-  background-image: url("../images/image-four.jpg");
-  background-size: cover;
-}
-
 .section-two .box-4 {
   position: absolute;
   left: 95%;
@@ -142,6 +140,11 @@ h1 {
   position: absolute;
   left: 2%;
   top: 90%;
+}
+
+.section-two .slide-main {
+  background-image: url("../images/image-four.jpg");
+  background-size: cover;
 }
 
 .section-two .slide-main h1 {
@@ -209,11 +212,14 @@ h1 {
   position: relative;
   left: 95%;
   top: 10%;
+  width: 700px;
+  height: auto;
 }
 
 .section-two .slide-one .row .box-1 img {
   background-size: cover;
-  width: 700px;
+  width: auto;
+  max-width: 700px;
   height: auto;
   border: 2px solid salmon;
 }
@@ -265,11 +271,14 @@ h1 {
   position: relative;
   left: 95%;
   top: 10%;
+  width: 700px;
+  height: auto;
 }
 
 .section-two .slide-two .row .box-1 img {
   background-size: cover;
-  width: 700px;
+  width: auto;
+  max-width: 700px;
   height: auto;
   border: 2px solid salmon;
 }
@@ -321,11 +330,14 @@ h1 {
   position: relative;
   left: 95%;
   top: 10%;
+  width: 700px;
+  height: auto;
 }
 
 .section-two .slide-three .row .box-1 img {
   background-size: cover;
-  width: 700px;
+  width: auto;
+  max-width: 700px;
   height: auto;
   border: 2px solid salmon;
 }
@@ -377,11 +389,14 @@ h1 {
   position: relative;
   left: 95%;
   top: 10%;
+  width: 700px;
+  height: auto;
 }
 
 .section-two .slide-four .row .box-1 img {
   background-size: cover;
-  width: 700px;
+  width: auto;
+  max-width: 700px;
   height: auto;
   border: 2px solid salmon;
 }
