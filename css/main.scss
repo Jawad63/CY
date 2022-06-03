@@ -753,61 +753,63 @@ span {
          position: absolute;
          left: 95%;
          top: 90%;
+         display: none;
       }
 
       .box-3 {
          position: absolute;
          left: 2%;
          top: 90%;
+         display: none;
       }
 
       .slide-main {
          background-image: url("../images/image-four.jpg");
          background-size: cover;
-      }
 
-      .row {
-         display: flex;
-         flex-direction: column;
+         .row {
+            display: flex;
+            flex-direction: column;
 
-         .box {
-            margin: 1rem;
-            background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+            .box {
+               margin: 1rem;
+               background-color: rgba(0, 0, 0, 0.7);
+               box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 
-            br {
-               display: none;
-            }
-
-            a {
-               text-decoration: none;
-
-               img {
-                  max-width: 30px;
-                  max-height: 30px;
+               br {
+                  display: none;
                }
-            }
 
-            h2 {
-               text-align: center;
-               color: salmon;
-               cursor: pointer;
-            }
+               a {
+                  text-decoration: none;
 
-            p {
-               text-align: center;
-               color: white;
-               font-size: 15px;
-               font-weight: 700;
-            }
+                  img {
+                     max-width: 30px;
+                     max-height: 30px;
+                  }
+               }
 
-            .discription {
-               font-size: 13px;
-               font-weight: 300;
-            }
+               h2 {
+                  text-align: center;
+                  color: salmon;
+                  cursor: pointer;
+               }
 
-            .icon {
-               text-align: center;
+               p {
+                  text-align: center;
+                  color: white;
+                  font-size: 15px;
+                  font-weight: 700;
+               }
+
+               .discription {
+                  font-size: 13px;
+                  font-weight: 300;
+               }
+
+               .icon {
+                  text-align: center;
+               }
             }
          }
       }
@@ -815,53 +817,35 @@ span {
       .slide-one {
          background-color: black;
 
+         &.fp-slide.fp-table {
+            justify-content: stretch !important;
+         }
+
          .row {
-            position: relative;
-
-            // .next-path {
-
-            //    display: flex;
-            //    position: absolute;
-            //    left: 20%;
-            //    top: 80%;
-
-            //    h2 {
-            //       color: whitesmoke;
-            //    }
-
-            //    a {
-            //       img {
-            //          left: 110%;
-            //          bottom: -40%;
-            //          position: absolute;
-            //       }
-            //    }
-
-            // }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .box-1 {
-               position: relative;
-               left: 95%;
-               top: 10%;
-               width: 700px;
+               position: static;
+               width: 100%;
                height: auto;
 
                img {
                   background-size: cover;
                   width: auto;
-                  max-width: 700px;
+                  max-width: 100%;
                   height: auto;
                   border: 2px solid salmon;
                }
             }
 
             .box-2 {
-               position: absolute;
-               width: 40%;
-               padding: 2rem;
+               position: static;
+               width: 100%;
+               max-width: auto;
                background-color: salmon;
-               left: 10%;
-               bottom: 30%;
 
                h1 {
                   color: white;
@@ -896,31 +880,30 @@ span {
          background-color: black;
 
          .row {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .box-1 {
-               position: relative;
-               left: 95%;
-               top: 10%;
-               width: 700px;
+               position: static;
+               width: 100%;
                height: auto;
 
                img {
                   background-size: cover;
                   width: auto;
-                  max-width: 700px;
+                  max-width: 100%;
                   height: auto;
                   border: 2px solid salmon;
                }
             }
 
             .box-2 {
-               position: absolute;
-               width: 40%;
-               padding: 2rem;
+               position: static;
+               width: 100%;
+               max-width: auto;
                background-color: salmon;
-               left: 10%;
-               bottom: 30%;
 
                h1 {
                   color: white;
@@ -955,31 +938,30 @@ span {
          background-color: black;
 
          .row {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .box-1 {
-               position: relative;
-               left: 95%;
-               top: 10%;
-               width: 700px;
+               position: static;
+               width: 100%;
                height: auto;
 
                img {
                   background-size: cover;
                   width: auto;
-                  max-width: 700px;
+                  max-width: 100%;
                   height: auto;
                   border: 2px solid salmon;
                }
             }
 
             .box-2 {
-               position: absolute;
-               width: 40%;
-               padding: 2rem;
+               position: static;
+               width: 100%;
+               max-width: auto;
                background-color: salmon;
-               left: 10%;
-               bottom: 30%;
 
                h1 {
                   color: white;
@@ -1014,31 +996,30 @@ span {
          background-color: black;
 
          .row {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .box-1 {
-               position: relative;
-               left: 95%;
-               top: 10%;
-               width: 700px;
+               position: static;
+               width: 100%;
                height: auto;
 
                img {
                   background-size: cover;
                   width: auto;
-                  max-width: 700px;
+                  max-width: 100%;
                   height: auto;
                   border: 2px solid salmon;
                }
             }
 
             .box-2 {
-               position: absolute;
-               width: 40%;
-               padding: 2rem;
+               position: static;
+               width: 100%;
+               max-width: auto;
                background-color: salmon;
-               left: 10%;
-               bottom: 30%;
 
                h1 {
                   color: white;
@@ -1071,33 +1052,33 @@ span {
    }
 }
 
-@media only screen and (max-width: 900px) {
-   .parent-object {
-      max-width: 1400px;
-      width: auto;
-      height: 500px;
-      display: flex;
-      margin: auto;
-      flex-direction: column;
-   }
+// @media only screen and (max-width: 900px) {
+//    .parent-object {
+//       max-width: 1400px;
+//       width: auto;
+//       height: 500px;
+//       display: flex;
+//       margin: auto;
+//       flex-direction: column;
+//    }
 
-   img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      max-width: auto;
-      width: auto;
-      height: 500px;
-      position: static;
-      margin: 10px;
-   }
+//    img {
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       max-width: auto;
+//       width: auto;
+//       height: 500px;
+//       position: static;
+//       margin: 10px;
+//    }
 
-   .about-child {
-      position: static;
-      max-width: auto;
-      width: auto;
-      height: 300px;
-      background-color: salmon;
-      color: black;
-      margin: 10px;
-   }
-}
+//    .about-child {
+//       position: static;
+//       max-width: auto;
+//       width: auto;
+//       height: 300px;
+//       background-color: salmon;
+//       color: black;
+//       margin: 10px;
+//    }
+// }

@@ -763,17 +763,19 @@ span {
     position: absolute;
     left: 95%;
     top: 90%;
+    display: none;
   }
   .section-two .box-3 {
     position: absolute;
     left: 2%;
     top: 90%;
+    display: none;
   }
   .section-two .slide-main {
     background-image: url("../images/image-four.jpg");
     background-size: cover;
   }
-  .section-two .row {
+  .section-two .slide-main .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,67 +784,80 @@ span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section-two .row .box {
+  .section-two .slide-main .row .box {
     margin: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: black 0px 20px 30px -10px;
             box-shadow: black 0px 20px 30px -10px;
   }
-  .section-two .row .box br {
+  .section-two .slide-main .row .box br {
     display: none;
   }
-  .section-two .row .box a {
+  .section-two .slide-main .row .box a {
     text-decoration: none;
   }
-  .section-two .row .box a img {
+  .section-two .slide-main .row .box a img {
     max-width: 30px;
     max-height: 30px;
   }
-  .section-two .row .box h2 {
+  .section-two .slide-main .row .box h2 {
     text-align: center;
     color: salmon;
     cursor: pointer;
   }
-  .section-two .row .box p {
+  .section-two .slide-main .row .box p {
     text-align: center;
     color: white;
     font-size: 15px;
     font-weight: 700;
   }
-  .section-two .row .box .discription {
+  .section-two .slide-main .row .box .discription {
     font-size: 13px;
     font-weight: 300;
   }
-  .section-two .row .box .icon {
+  .section-two .slide-main .row .box .icon {
     text-align: center;
   }
   .section-two .slide-one {
     background-color: black;
   }
+  .section-two .slide-one.fp-slide.fp-table {
+    -webkit-box-pack: stretch !important;
+        -ms-flex-pack: stretch !important;
+            justify-content: stretch !important;
+  }
   .section-two .slide-one .row {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-two .slide-one .row .box-1 {
-    position: relative;
-    left: 95%;
-    top: 10%;
-    width: 700px;
+    position: static;
+    width: 100%;
     height: auto;
   }
   .section-two .slide-one .row .box-1 img {
     background-size: cover;
     width: auto;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     border: 2px solid salmon;
   }
   .section-two .slide-one .row .box-2 {
-    position: absolute;
-    width: 40%;
-    padding: 2rem;
+    position: static;
+    width: 100%;
+    max-width: auto;
     background-color: salmon;
-    left: 10%;
-    bottom: 30%;
   }
   .section-two .slide-one .row .box-2 h1 {
     color: white;
@@ -870,29 +885,37 @@ span {
     background-color: black;
   }
   .section-two .slide-two .row {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-two .slide-two .row .box-1 {
-    position: relative;
-    left: 95%;
-    top: 10%;
-    width: 700px;
+    position: static;
+    width: 100%;
     height: auto;
   }
   .section-two .slide-two .row .box-1 img {
     background-size: cover;
     width: auto;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     border: 2px solid salmon;
   }
   .section-two .slide-two .row .box-2 {
-    position: absolute;
-    width: 40%;
-    padding: 2rem;
+    position: static;
+    width: 100%;
+    max-width: auto;
     background-color: salmon;
-    left: 10%;
-    bottom: 30%;
   }
   .section-two .slide-two .row .box-2 h1 {
     color: white;
@@ -920,29 +943,37 @@ span {
     background-color: black;
   }
   .section-two .slide-three .row {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-two .slide-three .row .box-1 {
-    position: relative;
-    left: 95%;
-    top: 10%;
-    width: 700px;
+    position: static;
+    width: 100%;
     height: auto;
   }
   .section-two .slide-three .row .box-1 img {
     background-size: cover;
     width: auto;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     border: 2px solid salmon;
   }
   .section-two .slide-three .row .box-2 {
-    position: absolute;
-    width: 40%;
-    padding: 2rem;
+    position: static;
+    width: 100%;
+    max-width: auto;
     background-color: salmon;
-    left: 10%;
-    bottom: 30%;
   }
   .section-two .slide-three .row .box-2 h1 {
     color: white;
@@ -970,29 +1001,37 @@ span {
     background-color: black;
   }
   .section-two .slide-four .row {
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-two .slide-four .row .box-1 {
-    position: relative;
-    left: 95%;
-    top: 10%;
-    width: 700px;
+    position: static;
+    width: 100%;
     height: auto;
   }
   .section-two .slide-four .row .box-1 img {
     background-size: cover;
     width: auto;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     border: 2px solid salmon;
   }
   .section-two .slide-four .row .box-2 {
-    position: absolute;
-    width: 40%;
-    padding: 2rem;
+    position: static;
+    width: 100%;
+    max-width: auto;
     background-color: salmon;
-    left: 10%;
-    bottom: 30%;
   }
   .section-two .slide-four .row .box-2 h1 {
     color: white;
@@ -1015,40 +1054,6 @@ span {
   .section-two .slide-four .row .box-2 p a:hover {
     color: white;
     border: 2px solid white;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .parent-object {
-    max-width: 1400px;
-    width: auto;
-    height: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: auto;
-    width: auto;
-    height: 500px;
-    position: static;
-    margin: 10px;
-  }
-  .about-child {
-    position: static;
-    max-width: auto;
-    width: auto;
-    height: 300px;
-    background-color: salmon;
-    color: black;
-    margin: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
