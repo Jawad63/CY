@@ -26,7 +26,7 @@ h1 {
 
 /* SECTION ONE */
 .section-one {
-  background-image: url("../images/image-one.jpg");
+  background-image: url("../images/body-images/section-one.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,8 +144,11 @@ h1 {
 }
 
 .section-two .slide-main {
-  background-image: url("../images/image-four.jpg");
+  background-image: url("../images/body-images/section-two.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .section-two .slide-main .row {
@@ -262,6 +265,8 @@ h1 {
   width: auto;
   max-width: 700px;
   height: auto;
+  -webkit-box-shadow: black 0px 20px 30px -10px;
+          box-shadow: black 0px 20px 30px -10px;
   border: 2px solid salmon;
 }
 
@@ -277,9 +282,9 @@ h1 {
 .section-two .slide-one .row .box-2 h1 {
   color: white;
   border-bottom: 2px solid white;
-  font-size: 40px;
+  font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .section-two .slide-one .row .box-2 p {
@@ -293,6 +298,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .section-two .slide-one .row .box-2 p a:hover {
@@ -335,9 +342,9 @@ h1 {
 
 .section-two .slide-two .row .box-2 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-bottom: 2px solid white;
 }
 
@@ -352,6 +359,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .section-two .slide-two .row .box-2 p a:hover {
@@ -395,9 +404,9 @@ h1 {
 .section-two .slide-three .row .box-2 h1 {
   color: white;
   border-bottom: 2px solid white;
-  font-size: 40px;
+  font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .section-two .slide-three .row .box-2 p {
@@ -411,6 +420,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .section-two .slide-three .row .box-2 p a:hover {
@@ -454,9 +465,9 @@ h1 {
 .section-two .slide-four .row .box-2 h1 {
   color: white;
   border-bottom: 2px solid white;
-  font-size: 40px;
+  font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .section-two .slide-four .row .box-2 p {
@@ -470,6 +481,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .section-two .slide-four .row .box-2 p a:hover {
@@ -479,9 +492,14 @@ h1 {
 
 /* SECTION THREE */
 .section-three {
-  background-color: black;
+  background-image: url("../images/body-images/section-three.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   max-width: auto;
-  width: 100%;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 .section-three .box-4 {
