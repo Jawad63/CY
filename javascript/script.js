@@ -8,7 +8,7 @@ new fullpage("#fullpage", {
   showActiveTooltip: true,
   scrollingSpeed: 1200,
   controlArrows: false,
-  slidesNavigation: true,
+  slidesNavigation: false,
 });
 
 // Toggle menu
@@ -32,20 +32,20 @@ const aboutUsText = document.getElementById("text");
 
 aboutUsOne.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Consultancy.";
-  aboutUsImage.src = "./images/image-one.jpg";
+  aboutUsImage.src = "./images/about-us/marketing-1.jpg";
 });
 
 aboutUsTwo.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Digital-Marketing.";
-  aboutUsImage.src = "./images/image-two.jpg";
+  aboutUsImage.src = "./images/about-us/seo.jpg";
 });
 
 aboutUsThree.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Construction-Advice.";
-  aboutUsImage.src = "./images/image-three.jpg";
+  aboutUsImage.src = "./images/about-us/web-1.jpg";
 });
 
 aboutUsFour.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Web-Development.";
-  aboutUsImage.src = "./images/image-four.jpg";
+  aboutUsImage.src = "./images/about-us/web-2.jpg";
 });

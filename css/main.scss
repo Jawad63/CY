@@ -32,6 +32,8 @@ h1 {
    background-repeat: no-repeat;
    background-size: cover;
    height: 100%;
+   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+
 
    header {
       z-index: 1000;
@@ -44,6 +46,8 @@ h1 {
          font-weight: 600;
          color: white;
          z-index: 20;
+         border: 2px solid white;
+         padding: 0.5rem;
       }
 
       .toggle {
@@ -59,6 +63,9 @@ h1 {
          z-index: 20;
          cursor: pointer;
          transition: 0.6s ease;
+         padding: 1.5rem;
+         border: 2px solid white;
+
       }
 
       .toggle.active {
@@ -126,18 +133,6 @@ h1 {
 
 .section-two {
 
-   .box-4 {
-      position: absolute;
-      left: 95%;
-      top: 90%;
-   }
-
-   .box-3 {
-      position: absolute;
-      left: 2%;
-      top: 90%;
-   }
-
    .slide-main {
       background-image: url("../images/body-images/section-two.jpg");
       background-position: center;
@@ -185,6 +180,8 @@ h1 {
             }
          }
       }
+
+
    }
 
    .row {
@@ -229,38 +226,10 @@ h1 {
    }
 
    .slide-one {
-      // background-image: url("../images/body-images/slide-one.jpg");
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // height: 100%;
-      // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
       background-color: black;
 
       .row {
          position: relative;
-
-
-         // .next-path {
-
-         //    display: flex;
-         //    position: absolute;
-         //    left: 20%;
-         //    top: 80%;
-
-         //    h2 {
-         //       color: whitesmoke;
-         //    }
-
-         //    a {
-         //       img {
-         //          left: 110%;
-         //          bottom: -40%;
-         //          position: absolute;
-         //       }
-         //    }
-
-         // }
 
          .box-1 {
             position: relative;
@@ -316,19 +285,10 @@ h1 {
          }
       }
 
-
-
-
-
    }
 
    .slide-two {
-      // background-image: url("../images/body-images/slide-two.jpg");
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // height: 100%;
-      // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+
       background-color: black;
 
       .row {
@@ -386,15 +346,11 @@ h1 {
             }
          }
       }
+
+
    }
 
    .slide-three {
-      // background-image: url("../images/body-images/slide-three.jpg");
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // height: 100%;
-      // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
       background-color: black;
 
       .row {
@@ -452,15 +408,11 @@ h1 {
             }
          }
       }
+
+
    }
 
    .slide-four {
-      // background-image: url("../images/body-images/slide-four.jpg");
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // height: 100%;
-      // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
       background-color: black;
 
       .row {
@@ -518,6 +470,8 @@ h1 {
             }
          }
       }
+
+
    }
 }
 
@@ -562,10 +516,9 @@ h1 {
          max-width: 700px;
          width: auto;
          height: 350px;
-         background-color: salmon;
+         background-color: rgba(0, 0, 0, 0.6);
          top: 18%;
          left: 45%;
-         color: black;
 
          .about-content {
             margin: 2rem;
@@ -573,7 +526,7 @@ h1 {
             h1 {
                font-size: 30px;
                margin-bottom: 30px;
-               color: rgb(127, 30, 73);
+               color: salmon;
             }
 
             .text {
@@ -601,18 +554,18 @@ h1 {
 
                      a {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                         transition: 0.1s ease-in-out;
                         font-size: 14px;
                         font-weight: 500;
-                        border: 2px solid black;
+                        border: 2px solid white;
                         padding: 5px;
                      }
 
                      a:hover {
-                        background-color: white;
+                        background-color: salmon;
                         color: black;
-                        border: 2px solid white;
+                        border: 2px solid salmon;
                      }
                   }
                }
@@ -737,6 +690,7 @@ h1 {
 span {
    background: #7f1e49 !important;
    margin: 10px;
+   padding: 5px;
 }
 
 .fp-slidesNav.fp-bottom {
