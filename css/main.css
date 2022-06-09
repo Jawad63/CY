@@ -292,8 +292,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .section-two .slide-one .row .box-2 p a:hover {
@@ -323,8 +323,8 @@ h1 {
   color: white;
   border: 2px solid white;
   padding: 8px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .section-two .slide-one .navigation ul li a:hover {
@@ -384,8 +384,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .section-two .slide-two .row .box-2 p a:hover {
@@ -445,8 +445,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .section-two .slide-three .row .box-2 p a:hover {
@@ -506,8 +506,8 @@ h1 {
   border: 2px solid black;
   font-size: 15px;
   padding: 5px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .section-two .slide-four .row .box-2 p a:hover {
@@ -1097,6 +1097,102 @@ span {
   .section-two .slide-four .row .box-2 p a:hover {
     color: white;
     border: 2px solid white;
+  }
+  .section-three {
+    background-image: url("../images/body-images/section-three.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-width: auto;
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  }
+  .section-three .box-4 {
+    position: absolute;
+    left: 95%;
+    top: 90%;
+  }
+  .section-three .parent-object {
+    max-width: 1300px;
+    width: auto;
+    height: 100%;
+    position: static;
+    margin: auto;
+  }
+  .section-three .parent-object img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    position: static;
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
+    border: 1px solid salmon;
+  }
+  .section-three .parent-object .about-child {
+    position: static;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section-three .parent-object .about-child .about-content {
+    margin: 0;
+    padding: 1.8rem;
+  }
+  .section-three .parent-object .about-child .about-content h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: salmon;
+  }
+  .section-three .parent-object .about-child .about-content .text {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section-three .parent-object .about-child .about-content .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .section-three .parent-object .about-child .about-content .skills ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-three .parent-object .about-child .about-content .skills ul li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style: none;
+    padding: 8px;
+  }
+  .section-three .parent-object .about-child .about-content .skills ul li a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    padding: 5px;
+  }
+  .section-three .parent-object .about-child .about-content .skills ul li a:hover {
+    background-color: salmon;
+    color: black;
+    border: 2px solid salmon;
   }
 }
 /*# sourceMappingURL=main.css.map */
