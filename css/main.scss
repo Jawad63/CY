@@ -285,6 +285,34 @@ h1 {
          }
       }
 
+      .navigation {
+
+         position: absolute;
+         left: 28%;
+         top: 92%;
+
+         ul {
+            display: flex;
+
+            li {
+               list-style: none;
+               padding: 10px;
+               a {
+                  text-decoration: none;
+                  color: white;
+                  border: 2px solid white;
+                  padding: 8px;
+                  transition: .5s ease;
+               }
+
+               a:hover {
+                  color: salmon;
+                  border: 2px solid salmon;
+               }
+            }
+         }
+      }
+
    }
 
    .slide-two {
@@ -347,7 +375,6 @@ h1 {
          }
       }
 
-
    }
 
    .slide-three {
@@ -409,7 +436,6 @@ h1 {
          }
       }
 
-
    }
 
    .slide-four {
@@ -470,7 +496,6 @@ h1 {
             }
          }
       }
-
 
    }
 }
@@ -574,6 +599,7 @@ h1 {
       }
    }
 }
+
 
 /* SECTION FOUR */
 

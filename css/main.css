@@ -301,6 +301,37 @@ h1 {
   border: 2px solid white;
 }
 
+.section-two .slide-one .navigation {
+  position: absolute;
+  left: 28%;
+  top: 92%;
+}
+
+.section-two .slide-one .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-two .slide-one .navigation ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.section-two .slide-one .navigation ul li a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 8px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.section-two .slide-one .navigation ul li a:hover {
+  color: salmon;
+  border: 2px solid salmon;
+}
+
 .section-two .slide-two {
   background-color: black;
 }
