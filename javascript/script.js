@@ -49,3 +49,6 @@ aboutUsFour.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Web-Development.";
   aboutUsImage.src = "./images/body-images/slide-four.jpg";
 });
+
+
+console.log(aboutUsImage);

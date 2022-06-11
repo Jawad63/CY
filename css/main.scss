@@ -264,104 +264,88 @@ h1 {
 
 
 /* SECTION THREE */
-
 .section-three {
-   background-image: url("../images/body-images/section-three.jpg");
+   background-image: url("../images/body-images/section-one.jpg");
+   height: 100%;
+   width: auto;
+   max-width: 100%;
+   background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: cover;
-   height: 100%;
-   max-width: auto;
+   background-color: white;
    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 
-   .box-4 {
-      position: absolute;
-      left: 95%;
-      top: 90%;
-   }
 
-   .parent-object {
-      max-width: 1300px;
-      width: auto;
-      height: 500px;
-      position: relative;
-      margin: auto;
-      top: 18%;
+   .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
 
-      img {
-         background-size: cover;
-         background-repeat: no-repeat;
-         max-width: 900px;
-         width: auto;
-         height: 500px;
-         position: absolute;
-         transition: 2s ease;
-         border: 1px solid salmon;
+      .col-one {
+         height: auto;
+         display: flex;
+         flex: 50%;
+         max-width: auto;
+
+         img {
+            width: 100%;
+            max-width: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+
       }
 
-      .about-child {
-         position: absolute;
-         max-width: 700px;
-         width: auto;
-         height: 350px;
-         background-color: rgba(0, 0, 0, 0.6);
-         top: 18%;
-         left: 45%;
+      .col-two {
+         height: auto;
+         width: 50%;
+         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+         border: 2px solid black;
 
-         .about-content {
-            margin: 2rem;
+         .text-container {
+            height: 100%;
+            border: 2px solid red;
 
             h1 {
                font-size: 30px;
-               margin-bottom: 30px;
-               color: salmon;
+               text-align: center;
+               padding: 1rem;
             }
 
-            .text {
-               font-size: 14px;
-               font-weight: 400;
+            p {
+               font-size: 13px;
                color: white;
-               line-height: 30px;
-               text-align: left;
-               margin-bottom: 40px;
+               padding: 1rem;
             }
 
-            .skills {
+            .buttons {
                display: flex;
-               justify-content: space-evenly;
+               justify-content: space-between;
 
-               ul {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+               a {
+                  text-decoration: none;
+                  color: white;
+                  border: 2px solid white;
+                  padding: 5px;
+                  margin: 0.7rem;
+                  font-size: 14px;
 
-                  li {
-                     justify-content: space-evenly;
-                     list-style: none;
-                     padding: 8px;
+               }
 
-                     a {
-                        text-decoration: none;
-                        color: white;
-                        transition: 0.1s ease-in-out;
-                        font-size: 14px;
-                        font-weight: 500;
-                        border: 2px solid white;
-                        padding: 5px;
-                     }
-
-                     a:hover {
-                        background-color: salmon;
-                        color: black;
-                        border: 2px solid salmon;
-                     }
-                  }
+               a:hover {
+                  color: salmon;
+                  border: 2px solid salmon;
                }
             }
          }
       }
    }
 }
+
+
+
+
 
 /* SECTION FOUR */
 

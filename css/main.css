@@ -281,115 +281,93 @@ h1 {
 
 /* SECTION THREE */
 .section-three {
-  background-image: url("../images/body-images/section-three.jpg");
+  background-image: url("../images/body-images/section-one.jpg");
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  max-width: auto;
+  background-color: white;
   -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
           box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
-.section-three .box-4 {
-  position: absolute;
-  left: 95%;
-  top: 90%;
+.section-three .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
 }
 
-.section-three .parent-object {
-  max-width: 1300px;
-  width: auto;
-  height: 500px;
-  position: relative;
-  margin: auto;
-  top: 18%;
+.section-three .container .col-one {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: auto;
 }
 
-.section-three .parent-object img {
+.section-three .container .col-one img {
+  width: 100%;
+  max-width: 500px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  max-width: 900px;
-  width: auto;
-  height: 500px;
-  position: absolute;
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
-  border: 1px solid salmon;
 }
 
-.section-three .parent-object .about-child {
-  position: absolute;
-  max-width: 700px;
-  width: auto;
-  height: 350px;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 18%;
-  left: 45%;
+.section-three .container .col-two {
+  height: auto;
+  width: 50%;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  border: 2px solid black;
 }
 
-.section-three .parent-object .about-child .about-content {
-  margin: 2rem;
+.section-three .container .col-two .text-container {
+  height: 100%;
+  border: 2px solid red;
 }
 
-.section-three .parent-object .about-child .about-content h1 {
+.section-three .container .col-two .text-container h1 {
   font-size: 30px;
-  margin-bottom: 30px;
-  color: salmon;
+  text-align: center;
+  padding: 1rem;
 }
 
-.section-three .parent-object .about-child .about-content .text {
-  font-size: 14px;
-  font-weight: 400;
+.section-three .container .col-two .text-container p {
+  font-size: 13px;
   color: white;
-  line-height: 30px;
-  text-align: left;
-  margin-bottom: 40px;
+  padding: 1rem;
 }
 
-.section-three .parent-object .about-child .about-content .skills {
+.section-three .container .col-two .text-container .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.section-three .parent-object .about-child .about-content .skills ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.section-three .parent-object .about-child .about-content .skills ul li {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-  padding: 8px;
-}
-
-.section-three .parent-object .about-child .about-content .skills ul li a {
+.section-three .container .col-two .text-container .buttons a {
   text-decoration: none;
   color: white;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-  font-size: 14px;
-  font-weight: 500;
   border: 2px solid white;
   padding: 5px;
+  margin: 0.7rem;
+  font-size: 14px;
 }
 
-.section-three .parent-object .about-child .about-content .skills ul li a:hover {
-  background-color: salmon;
-  color: black;
+.section-three .container .col-two .text-container .buttons a:hover {
+  color: salmon;
   border: 2px solid salmon;
 }
 
