@@ -140,7 +140,7 @@ h1 {
    background-size: cover;
    height: 100vh;
    max-width: auto;
-   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 
    .pillars {
       display: flex;
@@ -190,16 +190,77 @@ h1 {
       }
    }
 
-   .slide-one {
-      height: 100%;
+   .slides {
+
+      position: relative;
+
+      .image-box {
+         position: absolute;
+         top: 50%;
+         left: 35%;
+         transform: translate(-50%, -50%);
+         width: 700px;
+         height: auto;
+
+         img {
+            background-size: cover;
+            width: auto;
+            max-width: 700px;
+            height: auto;
+            position: center;
+         }
+      }
+
+      .text-box {
+         position: absolute;
+         top: 50%;
+         left: 125%;
+         transform: translate(-50%, -50%);
+         width: 600px;
+         height: 350px;
+         background-color: rgba(0, 0, 0, 0.7);
+         box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+         padding: 1rem;
+
+         h2 {
+            color: salmon;
+            border-bottom: 2px solid salmon;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+         }
+
+         p {
+            font-size: 13px;
+            color: white;
+            padding: 1rem;
+         }
+
+         .button {
+            padding: 1rem;
+
+            a {
+               text-decoration: none;
+               color: white;
+               border: 2px solid white;
+               transition: .5s ease;
+               padding: 5px;
+            }
+   
+            a:hover {
+               color: salmon;
+               border: 2px solid salmon;
+            }
+         }
+
+
+
+      }
+
+
+
    }
    
 }
-
-
-
-
-
 
 
 /* SECTION THREE */
@@ -211,7 +272,7 @@ h1 {
    background-size: cover;
    height: 100%;
    max-width: auto;
-   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 
    .box-4 {
       position: absolute;

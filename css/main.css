@@ -148,8 +148,8 @@ h1 {
   background-size: cover;
   height: 100vh;
   max-width: auto;
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .section-two .pillars {
@@ -212,8 +212,71 @@ h1 {
           flex-direction: column;
 }
 
-.section-two .slide-one {
-  height: 100%;
+.section-two .slides {
+  position: relative;
+}
+
+.section-two .slides .image-box {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 700px;
+  height: auto;
+}
+
+.section-two .slides .image-box img {
+  background-size: cover;
+  width: auto;
+  max-width: 700px;
+  height: auto;
+  position: center;
+}
+
+.section-two .slides .text-box {
+  position: absolute;
+  top: 50%;
+  left: 125%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: black 0px 20px 30px -10px;
+          box-shadow: black 0px 20px 30px -10px;
+  padding: 1rem;
+}
+
+.section-two .slides .text-box h2 {
+  color: salmon;
+  border-bottom: 2px solid salmon;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.section-two .slides .text-box p {
+  font-size: 13px;
+  color: white;
+  padding: 1rem;
+}
+
+.section-two .slides .text-box .button {
+  padding: 1rem;
+}
+
+.section-two .slides .text-box .button a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  padding: 5px;
+}
+
+.section-two .slides .text-box .button a:hover {
+  color: salmon;
+  border: 2px solid salmon;
 }
 
 /* SECTION THREE */
@@ -224,8 +287,8 @@ h1 {
   background-size: cover;
   height: 100%;
   max-width: auto;
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .section-three .box-4 {

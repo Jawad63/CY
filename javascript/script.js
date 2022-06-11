@@ -32,20 +32,20 @@ const aboutUsText = document.getElementById("text");
 
 aboutUsOne.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Consultancy.";
-  aboutUsImage.src = "./images/about-us/marketing-1.jpg";
+  aboutUsImage.src = "./images/body-images/slide-one.jpg";
 });
 
 aboutUsTwo.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Digital-Marketing.";
-  aboutUsImage.src = "./images/about-us/seo.jpg";
+  aboutUsImage.src = "./images/body-images/slide-two.jpg";
 });
 
 aboutUsThree.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Construction-Advice.";
-  aboutUsImage.src = "./images/about-us/web-1.jpg";
+  aboutUsImage.src = "./images/body-images/slide-three.jpg";
 });
 
 aboutUsFour.addEventListener("click", () => {
   aboutUsText.innerText = "This text is about Web-Development.";
-  aboutUsImage.src = "./images/about-us/web-2.jpg";
+  aboutUsImage.src = "./images/body-images/slide-four.jpg";
 });
