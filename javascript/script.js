@@ -8,7 +8,7 @@ new fullpage("#fullpage", {
   showActiveTooltip: true,
   scrollingSpeed: 1200,
   controlArrows: false,
-  slidesNavigation: false,
+  slidesNavigation: true,
 });
 
 // Toggle menu
