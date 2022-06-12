@@ -53,11 +53,6 @@ nav .wrap-nav .logo {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-}
-
-nav .wrap-nav .logo:hover {
-  color: var(--primary-color);
-  background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -152,26 +147,32 @@ nav .navigation.active {
           box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
-.section-one .logo-image {
+.section-one .logo-border {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: auto;
+}
+
+.section-one .logo-border .logo-image {
   width: 400px;
   height: 400px;
   margin: auto;
 }
 
-.section-one .logo-image img {
+.section-one .logo-border .logo-image img {
   background-size: cover;
   background-repeat: no-repeat;
   height: inherit;
   width: inherit;
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   border-radius: 50%;
-  border: 2px solid #f3deb1;
+  border: 3px solid #f3deb1;
 }
 
-.section-one .logo-image img:hover {
+.section-one .logo-border .logo-image img:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  border: 2px solid rgba(0, 0, 0, 0.7);
+  border: 3px solid rgba(0, 0, 0, 0.7);
   border-radius: 50%;
 }
 
