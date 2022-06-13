@@ -5,11 +5,14 @@ new fullpage("#fullpage", {
   navigation: true,
   anchors: ["section-one", "section-two", "section-three", "section-four"],
   navigationTooltips: ["Home", "Work", "About us", "Contact"],
+  horizontalNavigationToolTip: ['tooltip1','tooltip2'],
   showActiveTooltip: true,
   scrollingSpeed: 1200,
   controlArrows: false,
   slidesNavigation: true,
 });
+
+
 
 // Toggle menu
 
