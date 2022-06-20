@@ -23,7 +23,7 @@ toggle.addEventListener("click", () => {
 });
 
 
-            //////////////////////// Section Two JS Slider ////////////////////////
+//////////////////////// Section Two JS Slider ////////////////////////
 
 // Slider(all Slides in a container)
 const slider = document.querySelector(".slider")
@@ -68,11 +68,14 @@ const initiateINC = () => {
 
 // function for decrease(backward, previous) configuration
 const initiateDEC = () => {
-     // Remove active from all trails
+
+    // Remove active from all trails
     trail.forEach(cur => cur.classList.remove("active"))
+
     // decrease transform value
     value === 0 ? value = 80 : value -= 20
-     // update trailValue based on value
+
+    // update trailValue based on value
     trailUpdate()
 }
 
@@ -89,7 +92,7 @@ const move = (S, T) => {
 const tl = gsap.timeline({
     defaults: {
         duration: 0.6,
-        ease: "power2.inOut"
+        ease: "ease"
     }
 })
 
